@@ -10,4 +10,7 @@ go_sdk.download(version = "1.25.3")
 
 go_deps = use_extension("@gazelle//:extensions.bzl", "go_deps")
 go_deps.from_file(go_mod = "//:go.mod")
-use_repo(go_deps, "org_golang_google_grpc")
+use_repo(
+    go_deps,
+    "org_golang_google_grpc",
+)
