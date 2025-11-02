@@ -11,4 +11,8 @@ go_library(
     srcs = ["main.go"],
     importpath = "github.com/cianjinks/cloudsave/server",
     visibility = ["//visibility:private"],
+    deps = [
+        "//server/proto",
+        "@org_golang_google_grpc//:grpc",
+    ],
 )
