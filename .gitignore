@@ -1,0 +1,5 @@
+.direnv
+bazel-bin
+bazel-cloudsave
+bazel-out
+bazel-testlogs
